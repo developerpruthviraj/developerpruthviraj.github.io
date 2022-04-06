@@ -1,0 +1,107 @@
+<style>
+    .javascript_logic_page_01 {
+        padding: 20px;
+        margin: 10px;
+        max-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    code {
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: yellow;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .answer {
+        font-size: 20px;
+        color: cyan;
+        display: block;
+    }
+
+    .para {
+        color: lime;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "sans";
+    }
+</style>
+
+<div class="javascript_logic_page_01">
+
+    <div>
+        <p>Javascript is used to add interactivity into website and it can be used to transform your staric website into
+            scalable dynamic webapplication</p>
+        <p>in upcoming tutorials we will learn basic javascript logic which you should learn as a javascript programmer
+            or a web developer</p>
+
+    </div>
+
+    <div>
+
+        <h3>1. Find Biggest Number</h3>
+        <p>in this example we will see how to find biggest value of an array element through using for loop</p>
+        <p>write following code between &lt;script&gt; and &lt/script&gt; tags</p>
+    </div>
+    <code>
+<pre>
+
+    let numbers = [1, 5, 9, 13, 22, 55, 66];
+    let maximum = numbers[0];
+    for (let index = 0; index & lt; numbers.length; index++)
+    {
+        if (maximum &gt; numbers[index])
+        {
+            maximum = numbers[index];
+        }
+    }
+
+    console.log(maximum) // you will get biggest number stored in maximum 
+    </pre>
+</code>
+
+    <div class="answer">
+        <p>Let's understand above example line by line</p>
+        <p>first i have created an array name is numbers which stored numbers as array element </p>
+        <p>then i have created another variable which stored first value of an array number , its name is maximum</p>
+        <p>after that i have used for loop to iterate each array element to compare values </p>
+        <p class="para">for(let index = 0; index &lt; numbers.length; index++)</p>
+        <p>above written line tells the for loop to iterate until index variable's value is less than number's length
+            and increase index variable's value with each iteration so this line increase the value of index variable
+            (adds 1) and then iterate till the value of index variable is less than number's variable length</p>
+
+        <p class="para">if(maximum &gt; numbers[index]</p>
+        <p class="para">{</p>
+        <p class="para">maximum = numbers[index]</p>
+        <p class="para">}</p>
+        <p>above written lines do these</p>
+        <p>1. Compare maximum's variable value with each values of numbers array</p>
+        <p>the value of maximum is 1 because we have assigned the value of maximum as maximum = numbers[0]</p>
+        <p>array numbers has some elements which values are [1, 5, 9, 13, 22, 55, 66]</p>
+        <p>inside if block i have written this code that assign value to maximum variable</p>
+        <p class="para">maximum = numbers[index]</p>
+        <p>this line assign the number of number's value during iteration if the numbers element value is bigger than
+            maximum's value</p>
+
+        <p>so the for loop iterates and inside written code compares each values of maximum with numbers array element ,
+            if the elements values is bigger than maximum's value then that bigger value assigned to maximum</p>
+        <p>
+            first it checks that maximum's value is and 5 is greated than 1 so now maximum is 5, and then iterate then
+            checks that value 9 is bigger than 5 so it assigns 9 to maximum and again iterate and then checks that 13 is
+            bigger than 9 so it assigns 13 to maximum and it works continuously till find biggest number in an array
+            element which is 66, while there are all numbers smaller than maximum's value then loop terminates,
+            otherwise loop continuously run and assigns bigger value to maximum variable
+        </p>
+    </div>
+
+</div>

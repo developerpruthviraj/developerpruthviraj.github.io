@@ -1,0 +1,31 @@
+<script src="../../../../js/setting.js"></script>
+
+<style>
+    @media all and (min-width:250px) and (max-width:699px) {
+
+        .setting_div {
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .theme {
+            height: 100px;
+            width: 100px;
+            border: none;
+        }
+
+    }
+
+    /*  end of mobile style */
+
+    @media all and(min-width:700px) {}
+</style>
+
+<div class="setting_div">
+
+    <button onclick="apicall('src/js/setting.js','.setting_div')">Load JS</button>
+</div>
